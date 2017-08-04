@@ -244,7 +244,6 @@
             _contentLabel1.frame = CGRectMake(-_textWidth, 0, _textWidth, self.frame.size.height);
         }
     } else if (_currentMoveDirection == TextScrollMoveTop) {
-        NSLog(@"%f",_contentLabel3.frame.origin.y);
         _contentLabel3.frame = CGRectMake(0, _contentLabel3.frame.origin.y - 1, self.frame.size.width, _contentLabel3.frame.size.height);
         if (_contentLabel3.frame.origin.y < -_textHeight) {
             _contentLabel3.frame = CGRectMake(0, self.frame.size.height, self.frame.size.width, _textHeight);
